@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Inika;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     color: var(--color-black);
 }
@@ -42,8 +42,104 @@ header {
     padding-left: 200px;
 }
 
+.head-menu .head-items a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
 .welcom {
     height: 530px;
     background-color: var(--color-fon);
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcom .laefs{
+    min-width: 50%;
+}
+
+.welcom .laefs img{
+    min-height: 410px;
+    min-width: 450px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.welcom .welcom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.welcom-title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--color-title);
+    line-height: 50px;
+}
+
+.welcom-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-text);
+    line-height: 35px;
+    margin: 50px 0 50px;
+}
+
+.welcom-section .button {
+    height: 44px;
+    width: 158px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    border: 2px solid var(--color-orange);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.welcom-section .button:hover {
+    background-color: var(--color-orange);
+    color: #ffffff;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 660px;
+    padding: 110px;
+}
+
+.about-title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--color-green);
+    line-height: 50px;
+    margin: 50px 100px 50px 0;
+}
+
+.about-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-text);
+    line-height: 35px;
+    margin: 50px 100px 50px 0;
+}
+
+.about .about-logo {
+    min-width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-logo img{
+    height: 480px;
+    width: 465px;
 }

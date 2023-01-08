@@ -95,7 +95,6 @@ header {
     width: 158px;
     font-family: Inter;
     font-weight: 400;
-    line-height: 20px;
     border: 2px solid var(--color-orange);
     cursor: pointer;
     border-radius: 10px;
@@ -142,4 +141,85 @@ header {
 .about .about-logo img{
     height: 480px;
     width: 465px;
+}
+
+.service {
+    min-height: 1300px;
+    background-color: var(--color-fon);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 110px 120px;
+}
+
+.service-top {
+    height: 170px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.service-top .service-title {
+    color: var(--color-green);
+    font-family: Inika;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    width: 30%;
+}
+
+.service-top .service-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 55px;
+
+}
+
+.service-top .button-service{
+    width: 160px;
+    height: 50px;
+    font-family: Inika;
+    font-weight: 400;
+    color: var(--color-orange);
+    border: 1px solid var(--color-orange);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.service-top .button-service:hover{
+    color: white;
+    background-color: var(--color-orange);
+}
+
+.service-main {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.service-main .service-name {
+    height: 100px;
+    width: 330px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.service-main .topic {
+    color: var(--color-orange);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+}
+.service-main p {
+    color: var(--color-title);
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }

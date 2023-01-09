@@ -173,7 +173,6 @@ header {
     justify-content: space-between;
     gap: 50px;
     margin-left: 55px;
-
 }
 
 .service-top .button-service{
@@ -222,4 +221,157 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+}
+
+.price-content {
+    height: 560px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 110px 125px;
+}
+
+.price-content p {
+    font-family: Inter;
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.price-content .price-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 60px;
+}
+
+.price-content .price-box {
+    width: 330px;
+    height: 280px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-content .price-box .button-price {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--color-fon);
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.price-content .price-help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    width: 40%;
+    text-align: right;
+}
+
+.price-content .button-contact{
+    min-width: 160px;
+    min-height: 50px;
+    font-family: Inika;
+    font-weight: 700;
+    color: var(--color-orange);
+    border: 1px solid var(--color-orange);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.price-content .button-contact:hover{
+    color: white;
+    background-color: var(--color-orange);
+}
+
+.price-content .price-help img{
+    height: 175px;
+    width: 155px;
+}
+
+.contacts {
+    height: 550px;
+    background-color: var(--color-fon);
+    padding: 50px 110px 0;
+    display: flex;
+}
+
+.contact-form {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+.contact-form p {
+    font-family: Inika;
+    font-weight: 700;
+    color: var(--color-green);
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.contact-form .city-list {
+    display: flex;
+    justify-content: flex-end;
+}    
+
+.contact-form select {
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+    color: var(--color-title);
+    background-color: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding-left: 15px;
+    border: none;
+}
+
+ .contact-form option {
+    line-height: 100px;
+    background-color: #D6E7D2;
+    min-height: 100px;
+    
+ }
+
+.contact-form select:hover {
+    color: var(--color-title);
+    background-color: #C1E698;
+}
+
+footer {
+    min-height: 130px;
+    padding: 0 110px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials img {
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
 }

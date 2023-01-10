@@ -314,6 +314,7 @@ header {
     flex-direction: column;
     gap: 50px;
     flex-grow: 1;
+    align-items: flex-end;
 }
 
 .contact-form p {
@@ -322,6 +323,7 @@ header {
     color: var(--color-green);
     font-size: 40px;
     line-height: 50px;
+    width: 100%;
 }
 
 .contact-form .city-list {
@@ -352,6 +354,33 @@ header {
     color: var(--color-title);
     background-color: #C1E698;
 }
+
+.contact-form .output-information {
+    width: 450px;
+    height: 215px;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    /* display: none; */
+}
+
+.contact-form .outinfo {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contact-form .output-information p{
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--color-title);
+}
+
+
 
 footer {
     min-height: 130px;

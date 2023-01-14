@@ -347,7 +347,6 @@ header {
     line-height: 100px;
     background-color: #D6E7D2;
     min-height: 100px;
-    
  }
 
 .contact-form select:hover {
@@ -363,13 +362,19 @@ header {
     display: flex;
     flex-direction: column;
     padding: 25px;
-    /* display: none; */
+    flex-shrink: 1;
 }
+
+.contact-form #Canandaigua {display: none;}
+.contact-form #NYC {display: none;}
+.contact-form #Yonkers {display: none;}
+.contact-form #Sherrill {display: none;}
+
 
 .contact-form .outinfo {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .contact-form .output-information p{
@@ -380,7 +385,28 @@ header {
     color: var(--color-title);
 }
 
+.contact-form .btn-call-us {
+    padding-top: 15px;
+    text-align: center;
+}
 
+.contact-form .button-call-us {
+    width: 122px;
+    height: 26px;
+    font-family: Inika;
+    font-weight: 700;
+    color: var(--color-title);
+    border: 1px solid var(--color-orange);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.contact-form .button-call-us:hover{
+    color: white;
+    background-color: var(--color-orange);
+}
 
 footer {
     min-height: 130px;

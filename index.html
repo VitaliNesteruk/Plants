@@ -170,16 +170,40 @@
                 </div>
                 <div class="contact-form">
                     <p>Contact us</p>
+
+                    <script>
+                        function showHide(element_id){
+                            var obj = document.getElementById(element_id);
+                            if (obj.style.display != "block") {
+                                obj.style.display = "block"
+                            }
+                            else obj.style.display = "none"
+                        }
+                    </script>
+
                     <div class="city-list">
-                        <select name="City" size="1">
+                        <!-- <select name="Call" onchange="window.location.href = this.options[this.selectedIndex].value"> -->
+                        <select id="select" onchange="showHide();">
                             <option value="">City</option>
-                            <option value="i1">Canandaigua, NY</option>
-                            <option value="2">New York City</option>
-                            <option value="3">Yonkers, NY</option>
-                            <option value="4">Sherrill, NY</option>
+                            <option value="1" onclick="showHide('Canandaigua')">Canandaigua, NY</option>
+                            <option value="2" onclick="showHide('NYC')">New York City</option>
+                            <option value="3" onclick="showHide('Yonkers')">Yonkers, NY</option>
+                            <option value="4" onclick="showHide('Sherrill')">Sherrill, NY</option>
                         </select>
                     </div>
-                    <div class="output-information" id="Canandaigua">
+
+                    <script>
+                        function showHide(element_id){
+                            var obj = document.getElementById(element_id);
+                            if (obj.style.display != "block") {
+                                obj.style.display = "block"
+                            }
+                            else obj.style.display = "none"
+                        }
+                    </script>
+                    <a href="javascript:void(0)" onclick="showHide('Canandaigua')">Показать элемент</a>
+
+                    <div class="output-information" id="Canandaigua" style="display: none;">
                         <div class="outinfo">
                             <p>City:</p>
                             <P>Canandaigua, NY</P>
@@ -246,20 +270,8 @@
                         <div class="btn-call-us">
                             <button class="button-call-us"><span>Call us</span></button>
                         </div>
-                    </div>    
-
-                    <!-- <div>
-                        <div id="i1" style="display: none;">
-                            Блок1
-                        </div>
-                        <script>
-                            function viewList(){
-                            document.getElementById("i1").style.display = "block";
-                          };
-                        </script>
-                        
-                    </div> -->
-                </div>
+                    </div> 
+                </div> 
             </div>
         </main>
         <footer>

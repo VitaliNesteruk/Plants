@@ -365,7 +365,7 @@ header {
     flex-shrink: 1;
 }
 
-.contact-form #Canandaigua {display: none;}
+/* .contact-form #Canandaigua {display: none;} */
 .contact-form #NYC {display: none;}
 .contact-form #Yonkers {display: none;}
 .contact-form #Sherrill {display: none;}

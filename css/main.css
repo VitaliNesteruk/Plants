@@ -359,17 +359,15 @@ header {
     height: 215px;
     border: 1px solid;
     border-radius: 20px;
-    display: flex;
     flex-direction: column;
     padding: 25px;
     flex-shrink: 1;
+    display: none;
 }
 
-/* .contact-form #Canandaigua {display: none;} */
-.contact-form #NYC {display: none;}
-.contact-form #Yonkers {display: none;}
-.contact-form #Sherrill {display: none;}
-
+.contact-form .output-information.active {
+    display: flex;
+}
 
 .contact-form .outinfo {
     display: flex;

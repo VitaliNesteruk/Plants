@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/typography.css"></link>
     <link rel="stylesheet" href="css/main.css"></link>
     <link rel="stylesheet" href="css/adaptive.css"></link>
+    <script defer src="js/main.js"></script>
     <title>Plants</title>
 </head>
 <body>
@@ -171,39 +172,17 @@
                 <div class="contact-form">
                     <p>Contact us</p>
 
-                    <script>
-                        function showHide(element_id){
-                            var obj = document.getElementById(element_id);
-                            if (obj.style.display != "block") {
-                                obj.style.display = "block"
-                            }
-                            else obj.style.display = "none"
-                        }
-                    </script>
-
                     <div class="city-list">
-                        <!-- <select name="Call" onchange="window.location.href = this.options[this.selectedIndex].value"> -->
-                        <select id="select" onchange="showHide();">
-                            <option value="">City</option>
-                            <option value="1" onclick="showHide('Canandaigua')">Canandaigua, NY</option>
-                            <option value="2" onclick="showHide('NYC')">New York City</option>
-                            <option value="3" onclick="showHide('Yonkers')">Yonkers, NY</option>
-                            <option value="4" onclick="showHide('Sherrill')">Sherrill, NY</option>
+                        <select id="select">
+                            <option selected disabled>City</option>
+                            <option value="Canandaigua">Canandaigua, NY</option>
+                            <option value="NYC">New York City</option>
+                            <option value="Yonkers">Yonkers, NY</option>
+                            <option value="Sherrill">Sherrill, NY</option>
                         </select>
                     </div>
 
-                    <script>
-                        function showHide(element_id){
-                            var obj = document.getElementById(element_id);
-                            if (obj.style.display != "block") {
-                                obj.style.display = "block"
-                            }
-                            else obj.style.display = "none"
-                        }
-                    </script>
-                    <a href="javascript:void(0)" onclick="showHide('Canandaigua')">Показать элемент</a>
-
-                    <div class="output-information" id="Canandaigua" style="display: none;">
+                    <div class="output-information" id="Canandaigua">
                         <div class="outinfo">
                             <p>City:</p>
                             <P>Canandaigua, NY</P>

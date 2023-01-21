@@ -314,6 +314,7 @@ header {
     flex-direction: column;
     gap: 50px;
     flex-grow: 1;
+    align-items: flex-end;
 }
 
 .contact-form p {
@@ -322,6 +323,7 @@ header {
     color: var(--color-green);
     font-size: 40px;
     line-height: 50px;
+    width: 100%;
 }
 
 .contact-form .city-list {
@@ -345,12 +347,63 @@ header {
     line-height: 100px;
     background-color: #D6E7D2;
     min-height: 100px;
-    
  }
 
 .contact-form select:hover {
     color: var(--color-title);
     background-color: #C1E698;
+}
+
+.contact-form .output-information {
+    width: 450px;
+    height: 215px;
+    border: 1px solid;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 25px;
+    flex-shrink: 1;
+    display: none;
+}
+
+.contact-form .output-information.active {
+    display: flex;
+}
+
+.contact-form .outinfo {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contact-form .output-information p{
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--color-title);
+}
+
+.contact-form .btn-call-us {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contact-form .button-call-us {
+    width: 122px;
+    height: 26px;
+    font-family: Inika;
+    font-weight: 700;
+    color: var(--color-title);
+    border: 1px solid var(--color-orange);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.contact-form .button-call-us:hover{
+    color: white;
+    background-color: var(--color-orange);
 }
 
 footer {

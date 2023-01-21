@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/typography.css"></link>
     <link rel="stylesheet" href="css/main.css"></link>
     <link rel="stylesheet" href="css/adaptive.css"></link>
+    <script defer src="js/main.js"></script>
     <title>Plants</title>
 </head>
 <body>
@@ -170,26 +171,86 @@
                 </div>
                 <div class="contact-form">
                     <p>Contact us</p>
+
                     <div class="city-list">
-                        <select name="City" size="1">
-                            <option value="">City</option>
-                            <option value="i1">Canandaigua, NY</option>
-                            <option value="2">New York City</option>
-                            <option value="3">Yonkers, NY</option>
-                            <option value="4">Sherrill, NY</option>
+                        <select id="select">
+                            <option selected disabled>City</option>
+                            <option value="Canandaigua">Canandaigua, NY</option>
+                            <option value="NYC">New York City</option>
+                            <option value="Yonkers">Yonkers, NY</option>
+                            <option value="Sherrill">Sherrill, NY</option>
                         </select>
                     </div>
-                    <!-- <div>
-                        <script>
-                            function viewList(){
-                            document.getElementById("i1").style.display = "block";
-                          };
-                        </script>
-                        <div id="i1" style="display: none;">
-                            Блок1
+
+                    <div class="output-information" id="Canandaigua">
+                        <div class="outinfo">
+                            <p>City:</p>
+                            <P>Canandaigua, NY</P>
                         </div>
-                    </div> -->
-                </div>
+                        <div class="outinfo">
+                            <p>Phone:</p>
+                            <P>+1 585 393 0001</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Office adress:</p>
+                            <P>151 Charlotte Street</P>
+                        </div>
+                        <div class="btn-call-us">
+                            <button class="button-call-us"><span>Call us</span></button>
+                        </div>
+                    </div>
+                    <div class="output-information" id="NYC">
+                        <div class="outinfo">
+                            <p>City:</p>
+                            <P>New York City</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Phone:</p>
+                            <P>+1 212 456 0002</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Office adress:</p>
+                            <P>9 East 91st Street</P>
+                        </div>
+                        <div class="btn-call-us">
+                            <button class="button-call-us"><span>Call us</span></button>
+                        </div>
+                    </div>
+                    <div class="output-information" id="Yonkers">
+                        <div class="outinfo">
+                            <p>City:</p>
+                            <P>Yonkers, NY</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Phone:</p>
+                            <P>+1 914 678 0003</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Office adress:</p>
+                            <P>511 Warburton Ave</P>
+                        </div>
+                        <div class="btn-call-us">
+                            <button class="button-call-us"><span>Call us</span></button>
+                        </div>
+                    </div>
+                    <div class="output-information" id="Sherrill">
+                        <div class="outinfo">
+                            <p>City:</p>
+                            <P>Sherrill, NY</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Phone:</p>
+                            <P>+1 315 908 0004</P>
+                        </div>
+                        <div class="outinfo">
+                            <p>Office adress:</p>
+                            <P>14 WEST Noyes BLVD</P>
+                        </div>
+                        <div class="btn-call-us">
+                            <button class="button-call-us"><span>Call us</span></button>
+                        </div>
+                    </div> 
+                </div> 
             </div>
         </main>
         <footer>

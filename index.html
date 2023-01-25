@@ -154,30 +154,36 @@
                 <div class="price-choose">
                     <p>Prices</p>
                     <div class="price-box">
-                        <button class="accordion">Basic</button>
-                        <div class="panel">
-                            <p>Release of Letraset sheets containing Lorem Ipsum passages, and 
-                                more recently
-                            </p>
-                            <p><span>$15</span> / per hour</p>
-                            <button class="order" >Order</button>
+                        <div class="button-container">
+                            <button class="accordion">Basic</button>
+                            <div class="panel">
+                                <p>Release of Letraset sheets containing Lorem Ipsum passages, and 
+                                    more recently
+                                </p>
+                                <p><span>$15</span> / per hour</p>
+                                <button class="order">Order</button>
+                            </div>
                         </div>
-                        <button class="accordion">Basic</button>
-                        <div class="panel">
-                            <p>Release of Letraset sheets containing Lorem Ipsum passages, and 
-                                more recently
-                            </p>
-                            <p><span>$15</span> / per hour</p>
-                            <button class="order" >Order</button>
+                        <div class="button-container">    
+                            <button class="accordion">Standard</button>
+                            <div class="panel">
+                                <p>Release of Letraset sheets containing Lorem Ipsum passages, and 
+                                    more recently
+                                </p>
+                                <p><span>$25</span> / per hour</p>
+                                <button class="order" type="buttom">Order</button>
+                            </div>
                         </div>
-                        <!-- <button class="button-price"><span>Standard</span></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div> -->
-                        <button class="button-price"><span>Pro care</span></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
+                        <div class="button-container">  
+                            <button class="accordion">Pro care</button>
+                            <div class="panel">
+                                <p>Release of Letraset sheets containing Lorem Ipsum passages, and 
+                                    more recently
+                                </p>
+                                <p><span>$35</span> / per hour</p>
+                                <button class="order">Order</button>
+                            </div>
+                        </div>  
                     </div>
                 </div>
                 <div class="price-help">
@@ -186,29 +192,12 @@
                     <img src="images/leafs_smoll.png" alt="leafs">
                 </div>
             </div>
-
-            <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-                    for (i = 0; i < acc.length; i++) {
-                    acc[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                        } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                        } 
-                    });
-                }
-            </script>
-
             <div class="contacts">
+                <p>Contact us</p>
                 <div class="logo-contacts">
                     <img src="images/women.png" alt="contacts">
                 </div>
                 <div class="contact-form">
-                    <p>Contact us</p>
                     <div class="city-list">
                         <select id="select">
                             <option selected disabled>City</option>

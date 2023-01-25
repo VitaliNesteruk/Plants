@@ -255,15 +255,14 @@ header {
 
 .price-content .price-box {
     width: 330px;
-    min-height: 280px;
+    min-height: 300px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-      
+    padding: 30px 0;
 }
 
 .price-content .accordion {
@@ -278,7 +277,7 @@ header {
     border: none;
     text-align: left;
     outline: none;
-    transition: 0.4s;
+    transition: 0.04s;
     padding-left: 40px;  
     padding-right: 40px;
 }
@@ -290,7 +289,9 @@ header {
 .price-content .active, .accordion:after {
     content: '\2228';
     float: right;
-    margin-left: 5px;
+    border-radius: 20px 20px 0 0;
+    background-color: #D6E7D2;
+    vertical-align: middle;
 }
 
 .price-content .active:after {
@@ -305,13 +306,21 @@ header {
     max-height: 0;
     overflow:hidden;
     transition: max-height 0.2s ease-out;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.price-content .active, .panel:after {
+    border-bottom: 1px solid var(--color-title) ;
 }
 
 .price-content .panel p:nth-child(1) {
     font-family: Inter;
     font-weight: 300;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-title);
+    padding-top: 10px;
 }
 
 .price-content .panel p:last-child {
@@ -329,18 +338,17 @@ header {
     line-height: 20px;
 }
 
-.price-content .price-box .button-price {
-    width: 250px;
-    height: 50px;
+.price-content .panel .order {
+    width: 86px;
+    height: 25px;
+    color: var(--color-title);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
     border: none;
-    border-radius: 20px;
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 20px;
-    background-color: var(--color-fon);
-    text-align: left;
-    padding-left: 40px;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .price-content .price-help {
@@ -381,8 +389,22 @@ header {
     display: flex;
 }
 
+.contacts > p:first-child {
+    font-family: Inika;
+    font-weight: 700;
+    color: var(--color-green);
+    font-size: 40px;
+    line-height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+}
+
 .contact-form {
     margin-left: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -390,20 +412,14 @@ header {
     align-items: flex-end;
 }
 
-.contact-form p {
+.contact-form > p:first-child {
     font-family: Inika;
     font-weight: 700;
     color: var(--color-green);
     font-size: 40px;
     line-height: 50px;
     width: 100%;
-    padding-left: 10%;
 }
-
-.contact-form .city-list {
-    display: flex;
-    justify-content: flex-end;
-}    
 
 .contact-form select {
     width: 450px;
@@ -449,7 +465,7 @@ header {
     min-width: 40%;
 }
 
-.contact-form .outinfo p:last-child{
+.contact-form .outinfo > p:last-child{
     display: flex;
     justify-content: space-between;
     min-width: 60%;
@@ -464,7 +480,6 @@ header {
 }
 
 .contact-form .btn-call-us {
-    padding-top: 15px;
     text-align: center;
 }
 
@@ -479,6 +494,7 @@ header {
     border-radius: 5px;
     font-size: 12px;
     line-height: 15px;
+    margin-top: 15px;
 }
 
 .contact-form .button-call-us:hover{

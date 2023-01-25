@@ -144,7 +144,7 @@ header {
 }
 
 .service {
-    min-height: 1300px;
+    max-height: 1300px;
     background-color: var(--color-fon);
     display: flex;
     flex-direction: column;
@@ -198,8 +198,12 @@ header {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-
     gap: 8%;
+}
+
+.service-main .service-item {
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 .service-main .service-name {
@@ -208,6 +212,7 @@ header {
     border: 1px solid #E3E1D5;
     border-radius: 0 0 20px 20px;
     text-align: center;
+    
 }
 
 .service-main .topic {
@@ -232,7 +237,14 @@ header {
     padding: 50px 110px 125px;
 }
 
-.price-content p {
+.price-content .price-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.price-content div p:first-child {
     font-family: Inter;
     font-weight: 700;
     color: black;
@@ -241,22 +253,80 @@ header {
     text-align: center;
 }
 
-.price-content .price-choose {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    gap: 60px;
-}
-
 .price-content .price-box {
     width: 330px;
-    height: 280px;
+    min-height: 280px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
+      
+}
+
+.price-content .accordion {
+    width: 250px;
+    height: 50px;
+    background-color: var(--color-fon);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    padding-left: 40px;  
+    padding-right: 40px;
+}
+
+.price-content .accordion:hover {
+    background-color: #D6E7D2;
+}
+
+.price-content .active, .accordion:after {
+    content: '\2228';
+    float: right;
+    margin-left: 5px;
+}
+
+.price-content .active:after {
+    content: "\2227";
+}
+
+.price-content .panel {
+    width: 250px;
+    height: 155px;
+    padding: 0 18px;
+    background-color: #D6E7D2;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.price-content .panel p:nth-child(1) {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.price-content .panel p:last-child {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.price-content .panel span {
+    color: var(--color-orange);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .price-content .price-box .button-price {

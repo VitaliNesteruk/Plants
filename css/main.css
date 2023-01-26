@@ -280,22 +280,36 @@ header {
     transition: 0.04s;
     padding-left: 40px;  
     padding-right: 40px;
+    position: relative;
 }
 
 .price-content .accordion:hover {
     background-color: #D6E7D2;
 }
 
-.price-content .active, .accordion:after {
+.price-content .active, .accordion::after {
     content: '\2228';
     float: right;
     border-radius: 20px 20px 0 0;
     background-color: #D6E7D2;
-    vertical-align: middle;
 }
 
-.price-content .active:after {
+.price-content .active::after {
     content: "\2227";
+    background-color: #AEA1A1;
+}
+
+button.accordion::after {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    position: absolute;
+    padding-top: 5px;
+    left: 180px;
+    top: 10px;
+    text-align: center;
 }
 
 .price-content .panel {

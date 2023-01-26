@@ -22,10 +22,18 @@ for (i = 0; i < acc.length; i++) {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
+             panel.style.maxHeight = null;
         } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
+    });
+
+    acc[i].addEventListener("on", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight != null) {
+             panel.style.maxHeight = null;
+        } 
     });
 }
 
@@ -33,9 +41,9 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
-    panel.style.maxHeight = null;
+        panel.style.maxHeight = null;
     } else {
-    panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.maxHeight = panel.scrollHeight + "px";
     }
 }
 

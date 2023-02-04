@@ -14,39 +14,20 @@ function handleSelect(e) {
 select.addEventListener('change', handleSelect)
 
 /* Accordion script */
-var acc = document.getElementsByClassName("accordion");
+var acc = document.querySelectorAll(".accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
+    acc[i].addEventListener("click", function () {
+        this.classList.add("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
-             panel.style.maxHeight = null;
+            panel.style.maxHeight = null;
+            setTimeout(() => {
+                this.classList.remove("active");
+            }, 200)
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
-
-    acc[i].addEventListener("on", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight != null) {
-             panel.style.maxHeight = null;
-        } 
-    });
 }
-
-/*function accordionSlide() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-    } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-}
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", accordionSlide);
-}*/

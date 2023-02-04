@@ -1,16 +1,21 @@
 body {
     background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
 }
 
-.main-container {
-    min-width: 1440px;
+.container {
+    width: 1252px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
 header {
-    min-height: 135px;
     background-color: var(--color-fon);
+}
+
+.header {
+    min-height: 135px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,9 +28,6 @@ header {
 .head-logo {
     display: flex;
     justify-content: flex-start;
-    padding-left: 110px;
-    width: 100%;
-    height: 100%;
 }
 
 .head-logo img {
@@ -36,10 +38,14 @@ header {
 .head-menu {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding-right: 150px;
-    padding-left: 150px;
+}
+
+.head-menu .head-items {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 10px;
+    flex-wrap: nowrap;
 }
 
 .head-menu .head-items a{
@@ -48,29 +54,29 @@ header {
 }
 
 .welcom {
-    height: 530px;
     background-color: var(--color-fon);
+}
+
+.welcom-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .welcom .laefs{
-    min-width: 50%;
+    padding-right: 50px;
 }
 
 .welcom .laefs img{
-    min-height: 410px;
-    min-width: 450px;
-    padding-left: 120px;
-    padding-right: 120px;
+    width: 448px;
 }
 
 .welcom .welcom-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 90px;
+    padding: 90px 0;
+    max-width: 549px;
 }
 
 .welcom-title {
@@ -106,21 +112,26 @@ header {
     color: #ffffff;
 }
 
-.about {
+.about-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 660px;
-    padding: 110px;
+    padding: 95px 0;
+}
+
+.about-article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .about-title {
-    font-family: Inter;
-    font-weight: 700;
+    font-family: Inika;
+    font-weight: 400;
     font-size: 45px;
     color: var(--color-green);
     line-height: 50px;
-    margin: 50px 100px 50px 0;
+    margin-bottom: 40px;
 }
 
 .about-text {
@@ -129,13 +140,6 @@ header {
     font-size: 20px;
     color: var(--color-text);
     line-height: 35px;
-    margin: 50px 100px 50px 0;
-}
-
-.about .about-logo {
-    min-width: 45%;
-    display: flex;
-    justify-content: center;
 }
 
 .about .about-logo img{
@@ -144,19 +148,20 @@ header {
 }
 
 .service {
-    max-height: 1300px;
     background-color: var(--color-fon);
+}
+
+.service-content {
     display: flex;
     flex-direction: column;
-    padding: 20px 110px 120px;
+    padding-bottom: 120px;
 }
 
 .service-top {
-    height: 170px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding-left: 30px;
+    padding: 40px 0 30px 0;
     gap: 20%;
 }
 
@@ -178,7 +183,6 @@ header {
 
 .service-top .button-service{
     width: 160px;
-    height: 50px;
     font-family: Inika;
     font-weight: 400;
     color: var(--color-orange);
@@ -186,6 +190,9 @@ header {
     cursor: pointer;
     border-radius: 5px;
     font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .service-top .button-service:hover{
@@ -194,25 +201,19 @@ header {
 }
 
 .service-main {
-    margin-top: 40px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    gap: 8%;
-}
-
-.service-main .service-item {
-    padding-top: 30px;
-    padding-bottom: 25px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .service-main .service-name {
-    height: 100px;
     width: 330px;
     border: 1px solid #E3E1D5;
     border-radius: 0 0 20px 20px;
     text-align: center;
-    
+    padding-bottom: 25px;
 }
 
 .service-main .topic {
@@ -231,20 +232,19 @@ header {
 }
 
 .price-content {
-    height: 560px;
     display: flex;
     justify-content: space-between;
-    padding: 50px 110px 125px;
+    padding-top: 50px;
 }
 
-.price-content .price-choose {
+.price .price-choose {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     gap: 60px;
 }
 
-.price-content div p:first-child {
+.price .price-choose p:first-child {
     font-family: Inter;
     font-weight: 700;
     color: black;
@@ -253,9 +253,9 @@ header {
     text-align: center;
 }
 
-.price-content .price-box {
+.price .price-box {
     width: 330px;
-    min-height: 300px;
+    gap: 30px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     display: flex;
@@ -265,7 +265,7 @@ header {
     padding: 30px 0;
 }
 
-.price-content .accordion {
+.price .accordion {
     width: 250px;
     height: 50px;
     background-color: var(--color-fon);
@@ -281,80 +281,93 @@ header {
     padding-left: 40px;  
     padding-right: 40px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.price-content .accordion:hover {
+.price .accordion:hover {
     background-color: #D6E7D2;
 }
 
-.price-content .active, .accordion::after {
-    content: '\2228';
-    float: right;
-    border-radius: 20px 20px 0 0;
-    background-color: #D6E7D2;
+.price .circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
 }
 
-.price-content .active::after {
-    content: "\2227";
+.price .circle img{
+    display: table;
+    width: 9px; 
+    height: 9px;
+    transition: all 0.5s;
+    transform: rotate(0deg);
+    filter: invert(46%) sepia(0%) saturate(1406%) hue-rotate(157deg) brightness(94%) contrast(80%);
+}
+
+.price .accordion.active {
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.price .accordion.active img {
+    transform: rotate(180deg);
+    filter: invert(0%) sepia(0%) saturate(7432%) hue-rotate(35deg) brightness(115%) contrast(101%);
+}
+
+.price .accordion.active .circle {
     background-color: #AEA1A1;
 }
 
-button.accordion::after {
-    background-color: #D9D9D9;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-    position: absolute;
-    padding-top: 5px;
-    left: 180px;
-    top: 10px;
-    text-align: center;
-}
-
-.price-content .panel {
+.price .panel {
     width: 250px;
-    height: 155px;
-    padding: 0 18px;
+    padding: 0 25px;
     background-color: #D6E7D2;
     max-height: 0;
     overflow:hidden;
     transition: max-height 0.2s ease-out;
     border-radius: 0 0 20px 20px;
-    text-align: center;
+    text-align: left;
 }
 
-.price-content .active, .panel:after {
-    border-bottom: 1px solid var(--color-title) ;
+.price .wrapper {
+    border-top: 0.5px solid #AEA1A1 ;
 }
 
-.price-content .panel p:nth-child(1) {
+.price .panel p:nth-child(1) {
     font-family: Inter;
     font-weight: 300;
     font-size: 12px;
     line-height: 12px;
     color: var(--color-title);
     padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: left;
 }
 
-.price-content .panel p:last-child {
+.price .panel p:last-child {
     font-family: Inter;
     font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
-.price-content .panel span {
+.price .panel span {
     color: var(--color-orange);
     font-family: Inter;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 17px;
     line-height: 20px;
 }
 
-.price-content .panel .order {
+.price .panel .order {
     width: 86px;
-    height: 25px;
     color: var(--color-title);
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -362,48 +375,63 @@ button.accordion::after {
     vertical-align: middle;
     border: none;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.price-content .price-help {
+.price .price-help {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 40px;
-    width: 32%;
+    width: 40%;
+    padding-bottom: 100px;
     text-align: right;
 }
 
-.price-content .button-contact{
+.price .price-help p {
+    font-family: Inter;
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.price .button-contact{
     min-width: 160px;
-    min-height: 50px;
     font-family: Inika;
     font-weight: 700;
     color: var(--color-orange);
+    background-color: #ffffff;
     border: 1px solid var(--color-orange);
     cursor: pointer;
     border-radius: 5px;
     font-size: 20px;
+    padding: 10px 0;
 }
 
-.price-content .button-contact:hover{
+.price .button-contact:hover{
     color: white;
     background-color: var(--color-orange);
 }
 
-.price-content .price-help img{
+.price .price-help img{
     height: 175px;
     width: 155px;
 }
 
 .contacts {
-    height: 550px;
     background-color: var(--color-fon);
-    padding: 50px 110px 0;
-    display: flex;
 }
 
-.contacts > p:first-child {
+.contacts .contacts-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+}
+
+.contacts .contacts-content > p:nth-child(1) {
     font-family: Inika;
     font-weight: 700;
     color: var(--color-green);
@@ -421,18 +449,8 @@ button.accordion::after {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    flex-grow: 1;
     align-items: flex-end;
-}
-
-.contact-form > p:first-child {
-    font-family: Inika;
-    font-weight: 700;
-    color: var(--color-green);
-    font-size: 40px;
-    line-height: 50px;
-    width: 100%;
+    gap: 40px;
 }
 
 .contact-form select {
@@ -448,9 +466,7 @@ button.accordion::after {
 }
 
  .contact-form option {
-    line-height: 100px;
     background-color: #D6E7D2;
-    min-height: 100px;
  }
 
 .contact-form select:hover {
@@ -460,11 +476,10 @@ button.accordion::after {
 
 .contact-form .output-information {
     width: 450px;
-    height: 215px;
     border: 1px solid;
     border-radius: 20px;
     flex-direction: column;
-    padding: 25px;
+    padding: 20px 25px 25px;
     flex-shrink: 1;
     display: none;
 }
@@ -482,7 +497,8 @@ button.accordion::after {
 .contact-form .outinfo > p:last-child{
     display: flex;
     justify-content: space-between;
-    min-width: 60%;
+    max-width: 60%;
+    min-width: 59%;
 }
 
 .contact-form .output-information p{
@@ -499,7 +515,6 @@ button.accordion::after {
 
 .contact-form .button-call-us {
     width: 122px;
-    height: 26px;
     font-family: Inika;
     font-weight: 700;
     color: var(--color-title);
@@ -508,6 +523,7 @@ button.accordion::after {
     border-radius: 5px;
     font-size: 12px;
     line-height: 15px;
+    padding: 5px 0;
     margin-top: 15px;
 }
 
@@ -516,25 +532,403 @@ button.accordion::after {
     background-color: var(--color-orange);
 }
 
-footer {
-    min-height: 130px;
-    padding: 0 110px;
+.footer {
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
-    line-height: 50px;
+    line-height: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    padding: 40px 0;
+} 
 
-footer .socials {
+.footer .socials {
     display: flex;
     justify-content: space-between;
+    height: 45px;
+    align-items: center;
 }
 
 .socials img {
     height: 32px;
     width: 32px;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
+@media only screen and (max-width: 1439px) {
+    .container {
+        width: 698px;
+    }
+
+    .welcom-content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .welcom .welcom-section {
+        padding: 40px 0 70px;
+        max-width: 53%;
+    }
+
+    .welcom-title {
+        font-size: 35px;
+    }
+
+    .welcom-text {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 30px 0 30px;
+    }
+
+    .welcom .laefs{
+        padding: 0 0 0 15px;
+        margin-top: -70px;
+    }
+    
+    .welcom .laefs img{
+        width: 608px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0 95px;
+        gap: 60px;
+    }
+
+    .about-article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .about-title {
+        font-size: 35px;
+        line-height: 46px;
+        margin-bottom: 50px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .about-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .about .about-logo img{
+        height: 258px;
+        width: 250px;
+    }
+
+    .service-content {
+        padding-bottom: 70px;
+    }
+
+    .service-top {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 60px 0 0 0;
+        gap: 40px;
+    }
+    
+    .service-top .service-title {
+        font-size: 35px;
+        line-height: 46px;
+        max-width: 40%;
+    }
+    
+    .service-top .service-menu {
+        margin-left: 0;
+    }
+
+    .service-main {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .service-main .service-picture img {
+        width: 280px;
+    }
+
+    .service-main .service-name {
+        width: 280px;
+        padding: 0 15px 15px 15px;
+    }
+    
+    .service-main .topic {
+        line-height: 35px;
+    }
+
+    .price .price-choose p:first-child {
+        text-align: left;
+    }
+
+    .price .price-help {
+        width: 60%;
+        padding-top: 110px;
+        padding-bottom: 90px;
+        text-align: right;
+        gap: 30px;
+    }
+    
+    .price .price-help p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .contacts .contacts-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 800px;
+    }
+
+    .contacts .logo-contacts {
+        width: 250px;
+    }
+
+    .contacts .contacts-content > p:nth-child(1) {
+        position: absolute;
+        left: 50%;
+        top: 40px;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+    }
+
+    .contact-form {
+        margin-left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 25px 0;
+    } 
+
+    @media only screen and (max-width: 767px) {
+        .container {
+            width: 380px;
+            padding: 0 17.5px;
+        }
+
+        .header {
+            min-height: 95px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Inika;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--color-black);
+        }
+
+        .welcom .laefs img{
+            display: none;
+        }
+
+        .welcom .welcom-section {
+            padding: 25px 0 24px;
+            max-width: 100%;
+        }
+
+        .welcom-title {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        
+        .welcom-text {
+            font-size: 16px;
+            line-height: 25px;
+            margin: 20px 0 25px;
+        }
+
+        .welcom-section .button {
+            height: 34px;
+            width: 100px;
+            font-size: 10px;
+            line-height: 20px;
+        }
+
+        .about-content {
+            padding: 35px 0;
+            gap: 0px;
+        }
+       
+        .about-title {
+            font-size: 25px;
+            line-height: 32px;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .about-text {
+            font-size: 15px;
+            line-height: 25px;
+
+        }
+        
+        .about .about-logo img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .service-content {
+            padding-bottom: 25px;
+        }
+
+        .service-top {
+            padding: 30px 0 0 0;
+            gap: 30px;
+        }
+
+        .service-top .service-title {
+            font-size: 25px;
+            line-height: 33px;
+            max-width: 70%;
+        }
+
+        .service-top .service-menu {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-left: 0;
+        }
+        
+        .service-top .button-service{
+            width: 121px;
+            font-size: 15px;
+            line-height: 20px;
+            padding-top: 6.5px;
+            padding-bottom: 6.5px;
+        }
+
+        .service-main {
+            justify-content: center;
+        }
+
+        .price .price-content {
+            flex-direction: column;
+            padding-top: 25px;
+        }
+
+        .price .price-choose {
+            gap: 40px;
+            align-items: center;
+        }
+
+        .price .price-choose p:first-child {
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .price .price-box {
+            width: 225px;
+            gap: 30px;
+        }
+        
+        .price .accordion {
+            width: 180px;
+            font-size: 15px;
+            padding-left: 30px;  
+        }
+
+        .price .panel {
+            width: 180px;
+            padding: 0 25px;
+        }
+
+        .price .panel p:nth-child(1) {
+            font-size: 12px;
+            line-height: 12px;
+            text-align: left; 
+        }
+
+        .price .panel .order {
+            font-size: 14px;
+        }
+
+        .price .price-help {
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            padding: 20px 55px 40px 55px;
+            text-align: center;
+        }
+        
+        .price .price-help p {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        
+        .price .button-contact{
+            min-width: 120px;
+            font-size: 15px;
+            padding: 5px 0;
+        }
+
+        .price .price-help img {
+            display: none;
+        }
+
+        .contacts .contacts-content {
+            padding-top: 0px;
+            min-height: 450px;
+        }
+        
+        .contacts .contacts-content > p:nth-child(1) {
+            font-size: 25px;
+            line-height: 33px;
+        }
+
+        .contact-form {
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .contact-form select {
+            width: 300px;
+            height: 50px;
+            font-size: 16px;
+        }
+
+        .contacts .logo-contacts {
+            width: 100px;
+        }
+
+        .contact-form .output-information {
+            width: 285px;
+        }
+        
+        .contact-form .outinfo > p:last-child{
+            max-width: 70%;
+            min-width: 69%;
+        }
+        
+        .contact-form .outinfo:nth-child(3) p{
+            padding-top: 5px;
+            line-height: 20px;
+        }
+
+        .contact-form .btn-call-us {
+            padding-top: 5px;
+        }
+
+        .footer {
+            line-height: 35px;
+            padding: 15px 0;
+        }
+
+       
+    }
+} 

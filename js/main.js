@@ -31,3 +31,11 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+/* Hamburger button */
+let hamburgerMenu = document.querySelector('.hamburger-menu');
+let menu = document.querySelector('.head-menu');
+hamburgerMenu.addEventListener('click', function(){
+    hamburgerMenu.classList.toggle('active');
+    menu.classList.toggle('active');
+})

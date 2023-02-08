@@ -1,272 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css"></link>
-    <link rel="stylesheet" href="css/typography.css"></link>
-    <link rel="stylesheet" href="css/main.css"></link>
-    <link rel="stylesheet" href="css/adaptive.css"></link>
+    <link rel="stylesheet" href="css/reset.css">
+    </link>
+    <link rel="stylesheet" href="css/typography.css">
+    </link>
+    <link rel="stylesheet" href="css/main.css">
+    </link>
+    <link rel="stylesheet" href="css/adaptive.css">
+    </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
     <script defer src="js/main.js"></script>
     <title>Plants</title>
 </head>
+
 <body>
-    <div class="main-container">
-        <header>
-            <div class="head-logo">
-                <img src="images/logo.png" alt="logo">
-                <p>Plants</p>
-            </div>
-            <div class="head-menu">
-                <div class="head-items" >
-                    <a href="#" style="color:var(--color-orange)">Home</a>
+
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="head-logo">
+                    <img src="images/logo.png" alt="logo">
+                    <p>Plants</p>
                 </div>
-                <div class="head-items">
-                    <a href="#">About us</a>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="head-items">
-                    <a href="#">Service</a>
-                </div>
-                <div class="head-items">
-                    <a href="#">Price</a>
-                </div>
-                <div class="head-items">
-                    <a href="#">Contacts</a>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="welcom">
-                <div class="laefs">
-                    <img src="images/leafs.png" alt="leafs">
-                </div>
-                <div class="welcom-section">
-                    <div class="welcom-title">
-                        <p>We grow <span style="color:var(--color-green)">plants</span> 
-                            and give you oxygen
-                        </p>
+                <div class="head-menu">
+                    <div class="head-items">
+                        <a href="#" style="color:var(--color-orange)">Home</a>
                     </div>
-                    <div class="welcom-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing 
-                            and typesetting industry. Lorem Ipsum has been 
-                            the industry's standard dummy text ever since 
-                            the 1500s.
-                        </p>
+                    <div class="head-items">
+                        <a href="#">About us</a>
                     </div>
-                    <div class="welcom-buttom">
-                        <form action="#">
-                            <button class="button"><span>Learn more</span></button>
-                        </form>
+                    <div class="head-items">
+                        <a href="#">Service</a>
+                    </div>
+                    <div class="head-items">
+                        <a href="#">Price</a>
+                    </div>
+                    <div class="head-items">
+                        <a href="#">Contacts</a>
                     </div>
                 </div>
             </div>
-            <div class="about">
-                <div class="about-wrapper">
-                    <div class="about-title">
-                        <p>We are <span style="color: var(--color-orange)">professional experienced</span> gardeners</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcom">
+            <div class="container">
+                <div class="welcom-content">
+                    <div class="laefs">
+                        <img src="images/leafs.png" alt="leafs">
                     </div>
-                    <div class="about-text">
-                        <p>Lorem Ipsum is simply dummy text of the printing 
-                            and typesetting industry. Lorem Ipsum has been the 
-                            industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and 
-                            scrambled it to make a type specimen book. It has 
-                            survived not only five centuries, but also the leap 
-                            into electronic typesetting, remaining essentially 
-                            unchanged. 
-                        </p>
-                    </div>
-                </div>
-                <div class="about-logo">
-                    <img src="images/houseplant.png" alt="houseplant">
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-top">
-                    <div class="service-title">
-                        <p>Service and our projects</p>
-                    </div>
-                    <div class="service-menu">
-                        <button class="button-service"><span>Gardens</span></button>
-                        <button class="button-service"><span>Lawn</span></button>
-                        <button class="button-service"><span>Planting</span></button>
-                    </div>
-                </div>
-                <div class="service-main">
-                    <div class="service-item">
-                        <div class="service-picture">
-                            <a href="#"><img src="images/garden.png" alt="Garden care"></a> 
+                    <div class="welcom-section">
+                        <div class="welcom-title">
+                            <p>We grow <span style="color:var(--color-green)">plants</span>
+                                and give you oxygen
+                            </p>
                         </div>
-                        <div class="service-name">
-                            <p class="topic">Garden care</p>
-                            <p>Lorem Ipsum has been the industry</p>
+                        <div class="welcom-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s.
+                            </p>
                         </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-picture">
-                            <a href="#"><img src="images/planting.png" alt="Planting"></a> 
-                        </div>
-                        <div class="service-name">
-                            <p class="topic">Planting</p>
-                            <p>Lorem Ipsum has been the industry</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-picture">
-                            <a href="#"><img src="images/care.png" alt="Lawn care"></a> 
-                        </div>
-                        <div class="service-name">
-                            <p class="topic">Lawn care</p>
-                            <p>Lorem Ipsum has been the industry</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-picture">
-                            <a href="#"><img src="images/planting2.png" alt="Planting"></a> 
-                        </div>
-                        <div class="service-name">
-                            <p class="topic">Planting</p>
-                            <p>Lorem Ipsum has been the industry</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-picture">
-                            <a href="#"><img src="images/gargen2.png" alt="Garden"></a> 
-                        </div>
-                        <div class="service-name">
-                            <p class="topic">Garden care</p>
-                            <p>Lorem Ipsum has been the industry</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-picture">
-                            <a href="#"><img src="images/planting3.png" alt="Planting"></a> 
-                        </div>
-                        <div class="service-name">
-                            <p class="topic">Planting</p>
-                            <p>Lorem Ipsum has been the industry</p>
+                        <div class="welcom-buttom">
+                            <form action="#">
+                                <button class="button"><span>LEARN MORE</span></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="price-content">
-                <div class="price-choose">
-                    <p>Prices</p>
-                    <div class="price-box">
-                        <button class="button-price"><span>Basic</span></button>
-                        <button class="button-price"><span>Standard</span></button>
-                        <button class="button-price"><span>Pro care</span></button>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-article">
+                        <div class="about-title">
+                            <p>We are <span style="color: var(--color-orange)">professional experienced</span> gardeners</p>
+                        </div>
+                        <div class="about-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap
+                                into electronic typesetting, remaining essentially
+                                unchanged.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-logo">
+                        <img src="images/houseplant.png" alt="houseplant">
                     </div>
                 </div>
-                <div class="price-help">
-                    <p>Our best <span style="color: var(--color-green);">gardeners</span> are ready to help you</p>
-                    <button class="button-contact"><span>Contact us</span></button>
-                    <img src="images/leafs_smoll.png" alt="leafs">
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="container">
+                <div class="service-content">
+                    <div class="service-top">
+                        <div class="service-title">
+                            <p>Service and our projects</p>
+                        </div>
+                        <div class="service-menu">
+                            <button class="button-service"><span>Gardens</span></button>
+                            <button class="button-service"><span>Lawn</span></button>
+                            <button class="button-service"><span>Planting</span></button>
+                        </div>
+                    </div>
+                    <div class="service-main">
+                        <div class="service-item">
+                            <div class="service-picture">
+                                <a href="#"><img src="images/garden.png" alt="Garden care"></a>
+                            </div>
+                            <div class="service-name">
+                                <p class="topic">Garden care</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-picture">
+                                <a href="#"><img src="images/planting.png" alt="Planting"></a>
+                            </div>
+                            <div class="service-name">
+                                <p class="topic">Planting</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-picture">
+                                <a href="#"><img src="images/care.png" alt="Lawn care"></a>
+                            </div>
+                            <div class="service-name">
+                                <p class="topic">Lawn care</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-picture">
+                                <a href="#"><img src="images/planting2.png" alt="Planting"></a>
+                            </div>
+                            <div class="service-name">
+                                <p class="topic">Planting</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-picture">
+                                <a href="#"><img src="images/gargen2.png" alt="Garden"></a>
+                            </div>
+                            <div class="service-name">
+                                <p class="topic">Garden care</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-picture">
+                                <a href="#"><img src="images/planting3.png" alt="Planting"></a>
+                            </div>
+                            <div class="service-name">
+                                <p class="topic">Planting</p>
+                                <p>Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="contacts">
-                <div class="logo-contacts">
-                    <img src="images/women.png" alt="contacts">
+        </section>
+
+        <section class="price">
+            <div class="container">
+                <div class="price-content">
+                    <div class="price-choose">
+                        <p>Prices</p>
+                        <div class="price-box">
+                            <div class="button-container">
+                                <button class="accordion">
+                                    <span>Basic</span>
+                                    <div class="circle">
+                                        <img src="images/arrow.svg" />
+                                    </div>
+                                </button>
+                                <div class="panel">
+                                    <div class="wrapper">
+                                        <p>Release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more recently
+                                        </p>
+                                        <p><span style="font-size: 12px;">$</span><span>15</span> / per hour</p>
+                                        <button class="order">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="accordion">
+                                    <span>Standard</span>
+                                    <div class="circle">
+                                        <img src="images/arrow.svg" />
+                                    </div>
+                                </button>
+                                <div class="panel">
+                                    <div class="wrapper">
+                                        <p>Release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more recently
+                                        </p>
+                                        <p><span style="font-size: 12px;">$</span><span>25</span> / per hour</p>
+                                        <button class="order" type="buttom">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="accordion">
+                                    <span>Pro care</span>
+                                    <div class="circle">
+                                        <img src="images/arrow.svg" />
+                                    </div>
+                                </button>
+                                <div class="panel">
+                                    <div class="wrapper">
+                                        <p>Release of Letraset sheets containing Lorem Ipsum passages, and
+                                            more recently
+                                        </p>
+                                        <p><span style="font-size: 12px;">$</span><span>35</span> / per hour</p>
+                                        <button class="order">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-help">
+                        <p>Our best <span style="color: var(--color-green);">gardeners</span> are ready to help you</p>
+                        <button class="button-contact"><span>Contact us</span></button>
+                        <img src="images/leafs_smoll.png" alt="leafs">
+                    </div>
                 </div>
-                <div class="contact-form">
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts-content">
                     <p>Contact us</p>
+                    <div class="logo-contacts">
+                        <img src="images/women.png" alt="contacts">
+                    </div>
+                    <div class="contact-form">
+                        <div class="city-list">
+                            <select id="select">
+                                <option selected disabled>City</option>
+                                <option value="Canandaigua">Canandaigua, NY</option>
+                                <option value="NYC">New York City</option>
+                                <option value="Yonkers">Yonkers, NY</option>
+                                <option value="Sherrill" style="word-wrap: wrap;">Sherrill, NY</option>
+                            </select>
+                        </div>
+                        <div class="output-information" id="Canandaigua">
+                            <div class="outinfo">
+                                <p>City:</p>
+                                <P>Canandaigua, NY</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Phone:</p>
+                                <P>+1 585 393 0001</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Office adress:</p>
+                                <P>151 Charlotte Street</P>
+                            </div>
+                            <div class="btn-call-us">
+                                <button class="button-call-us"><span>Call us</span></button>
+                            </div>
+                        </div>
+                        <div class="output-information" id="NYC">
+                            <div class="outinfo">
+                                <p>City:</p>
+                                <P>New York City</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Phone:</p>
+                                <P>+1 212 456 0002</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Office adress:</p>
+                                <P>9 East 91st Street</P>
+                            </div>
+                            <div class="btn-call-us">
+                                <button class="button-call-us"><span>Call us</span></button>
+                            </div>
+                        </div>
+                        <div class="output-information" id="Yonkers">
+                            <div class="outinfo">
+                                <p>City:</p>
+                                <P>Yonkers, NY</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Phone:</p>
+                                <P>+1 914 678 0003</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Office adress:</p>
+                                <P>511 Warburton Ave</P>
+                            </div>
+                            <div class="btn-call-us">
+                                <button class="button-call-us"><span>Call us</span></button>
+                            </div>
+                        </div>
+                        <div class="output-information" id="Sherrill">
+                            <div class="outinfo">
+                                <p>City:</p>
+                                <P>Sherrill, NY</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Phone:</p>
+                                <P>+1 315 908 0004</P>
+                            </div>
+                            <div class="outinfo">
+                                <p>Office adress:</p>
+                                <P>14 WEST Noyes BLVD</P>
+                            </div>
+                            <div class="btn-call-us">
+                                <button class="button-call-us"><span>Call us</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                    <div class="city-list">
-                        <select id="select">
-                            <option selected disabled>City</option>
-                            <option value="Canandaigua">Canandaigua, NY</option>
-                            <option value="NYC">New York City</option>
-                            <option value="Yonkers">Yonkers, NY</option>
-                            <option value="Sherrill">Sherrill, NY</option>
-                        </select>
-                    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div>
+                    <p>&copy; &nbsp;&nbsp;&nbsp; 2022 &nbsp;&nbsp;&nbsp; github</p>
+                </div>
+                <div>
+                    <p>Rolling Scopes School</p>
+                </div>
+                <div class="socials">
+                    <img src="images/instagram.png" alt="instagram">
+                    <img src="images/facebook.png" alt="facebook">
+                    <img src="images/twitter.png" alt="twitter">
+                    <img src="images/odnoklasniki.png" alt="odnoklasniki">
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                    <div class="output-information" id="Canandaigua">
-                        <div class="outinfo">
-                            <p>City:</p>
-                            <P>Canandaigua, NY</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Phone:</p>
-                            <P>+1 585 393 0001</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Office adress:</p>
-                            <P>151 Charlotte Street</P>
-                        </div>
-                        <div class="btn-call-us">
-                            <button class="button-call-us"><span>Call us</span></button>
-                        </div>
-                    </div>
-                    <div class="output-information" id="NYC">
-                        <div class="outinfo">
-                            <p>City:</p>
-                            <P>New York City</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Phone:</p>
-                            <P>+1 212 456 0002</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Office adress:</p>
-                            <P>9 East 91st Street</P>
-                        </div>
-                        <div class="btn-call-us">
-                            <button class="button-call-us"><span>Call us</span></button>
-                        </div>
-                    </div>
-                    <div class="output-information" id="Yonkers">
-                        <div class="outinfo">
-                            <p>City:</p>
-                            <P>Yonkers, NY</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Phone:</p>
-                            <P>+1 914 678 0003</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Office adress:</p>
-                            <P>511 Warburton Ave</P>
-                        </div>
-                        <div class="btn-call-us">
-                            <button class="button-call-us"><span>Call us</span></button>
-                        </div>
-                    </div>
-                    <div class="output-information" id="Sherrill">
-                        <div class="outinfo">
-                            <p>City:</p>
-                            <P>Sherrill, NY</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Phone:</p>
-                            <P>+1 315 908 0004</P>
-                        </div>
-                        <div class="outinfo">
-                            <p>Office adress:</p>
-                            <P>14 WEST Noyes BLVD</P>
-                        </div>
-                        <div class="btn-call-us">
-                            <button class="button-call-us"><span>Call us</span></button>
-                        </div>
-                    </div> 
-                </div> 
-            </div>
-        </main>
-        <footer>
-            <div>
-                <p>&copy; &nbsp;&nbsp;&nbsp; 2022 &nbsp;&nbsp;&nbsp; github</p>
-            </div>
-            <div>
-                <p>Rolling Scopes School</p>
-            </div>
-            <div class="socials">
-                <img src="images/instagram.png" alt="instagram">
-                <img src="images/facebook.png" alt="facebook">
-                <img src="images/twitter.png" alt="twitter">
-                <img src="images/odnoklasniki.png" alt="odnoklasniki">
-            </div>
-        </footer>
-    </div>
 </body>
+
 </html>
